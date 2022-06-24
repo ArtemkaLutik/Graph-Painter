@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="StyleSheet1.css">
+</head>
+<body>
+    <div id="images"></div>
+    <div class="MyDiv">
+        <div style="padding:10px">
+            <b style="font-family:Calibri">Mode:</b>
+            <button type="button" onclick="ChangeMode('drag')">Drag</button>
+            <button type="button" onclick="ChangeMode('create')">Create</button>
+            <button type="button" onclick="ChangeMode('createEdge')">Create(Edge)</button>
+            <button type="button" onclick="ChangeMode('delete')">Delete</button>
+        </div>
+    </div>
+
+    <div class="MyDiv">
+        <div style="padding:10px">
+            <b style="font-family:Calibri">Tools:</b>
+            <button type="button" onclick="ChangeMode('animate')">Breath-first search</button>
+            <b style="font-family:Calibri">Animation Speed:</b>
+            <button type="button" onclick="AnimSpeed=1500">0.5x</button>
+            <button type="button" onclick="AnimSpeed=800">1x</button>
+            <button type="button" onclick="AnimSpeed=500">2x</button>
+        </div>
+    </div>
+
+    <div class="MyDiv">
+        <div style="padding:10px">
+            <canvas id="testCanvas" width="700" height="400"> </canvas>
+        </div>
+    </div>
+
+    <div class="MyDiv">
+        <div style="padding:10px">
+            <b style="font-family:Calibri">Conective:</b>
+            <b style="font-family:Calibri" id="ResConect">-</b>
+        </div>
+    </div>
+
+    <div class="MyDiv">
+        <div style="padding:10px">
+            <b style="font-family:Calibri">Adjacency matrix:</b>
+            <br>
+            <div id="MatrixDiv" style="margin-top: 10px"></div>
+        </div>
+    </div>
+
+    <div class="MyDiv">
+        <div style="padding:10px">
+            <b style="font-family:Calibri">By Artem Lut | 2022</b>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
